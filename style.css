@@ -1,7 +1,12 @@
 .correct{
-  background:green;
+  background:lime;
 }
 
 .incorrect{
   background:red;
+}
+
+audio {
+  position: fixed;
+  top: 10;
 }
