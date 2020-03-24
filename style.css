@@ -6,7 +6,7 @@
   background:red;
 }
 
-audio {
+#audiocontrols {
   position: fixed;
   top: 10;
 }

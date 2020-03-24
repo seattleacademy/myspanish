@@ -15,18 +15,18 @@ function onChange(evt) {
             .addClass("incorrect");
     }
 }
+var aud = document.getElementById("myAudio");
 
+aud.onplay = function() {
+    var num = $("#audiospeed").val();
+    if (num) aud.playbackRate = num;
+};
 //Play sound segment when enter is pressed
 $("input").keypress(function(event) {
     if (event.key == "Enter") {
-        console.log(event)
         if (event.shiftKey) {
-          console.log('shift')
             $("input").each(function() {
-
                 correct = $(this).data('correct');
-                console.log(correct)
-
                 $(this).val(correct);
             })
         }
@@ -37,6 +37,9 @@ $("input").keypress(function(event) {
         x.play();
         let duration = $(this).data("duration");
         if (!duration) return;
-        setTimeout(() => x.pause(), duration);
+        let num = $("#audiospeed").val();
+        if (num) aud.playbackRate = num
+        else num = 1;
+        setTimeout(() => x.pause(), duration/num);
     }
 });

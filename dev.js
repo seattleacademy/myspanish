@@ -1,4 +1,3 @@
-
 //Developer code for creating input boxes
 $("img").mousedown(onmousedown);
 var iLeft = 0;
@@ -24,5 +23,5 @@ aud.onpause = function() {
 };
 
 aud.onplay = function() {
-	lastTime = aud.currentTime;
+	lastTime = aud.currentTime;	      
 };

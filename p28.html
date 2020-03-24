@@ -2,15 +2,31 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>spanishp18</title>
+  <title>Anders Languages 28</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<img style="position:absolute;top:0px;left:0px;"src="p28.png" alt="p28"/> 
+<img style="position:absolute;top:0px;left:0px;"src="p28.png" alt="p28"/>
+<div id="audiocontrols"> 
 <audio id="myAudio" controls>
   <source  src="https://seattleacademy.github.io/myspanish/p28.m4a" type="audio/mpeg">
 </audio>
+  <input type="range" id="audiospeed" min=".25" max="4" value="1" step=".25"/>
+	
+
+<datalist id="tickmarks">
+  <option value=".25" label="25%"></option>
+  <option value=".5"></option>
+  <option value="1"></option>
+  <option value="1.25"></option>
+  <option value="1.5"></option>
+  <option value="2" label="50%"></option>
+  <option value="2.5"></option>
+  <option value="3"></option>
+  <option value="4"></option>
+</datalist>
+</div>
 
 <input style='position:absolute;left:391px;top:337px;width:150px;height:14px' data-correct='trabajo' data-start='11.5' data-duration='5985'/>
 <input style='position:absolute;left:397px;top:364px;width:163px;height:17px' data-correct='come' data-start='19' data-duration='5687'/>
@@ -49,9 +65,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script  src="./script.js"></script>
 <!-- Uncomment below for development -->
-<!-- <textarea id="area" style="position:fixed;top:10px; left:400px;"rows="12" cols="100">
+<textarea id="area" style="position:fixed;top:10px; left:500px;"rows="12" cols="100">
 </textarea>
-<script  src="./dev.js"></script> -->
+<script  src="./dev.js"></script>
 
 </body>
 </html>
