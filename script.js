@@ -5,7 +5,7 @@ $("input").change(onChange);
 function onChange(evt) {
     let correct = $(this).data("correct");
     let response = $(this).val();
-    if (correct == response) {
+    if (correct.toLowerCase() == response.toLowerCase()) {
         $(this)
             .removeClass("incorrect")
             .addClass("correct");
