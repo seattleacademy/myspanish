@@ -1,88 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Anders Languages 36</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <title>Anders Languages 36</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-<img style="position:absolute;top:0px;left:0px;"src="p36d.png" alt="p36"/>
+    <img style="position:absolute;top:0px;left:0px;" src="p36d.png" alt="p36" />
+    <div id="audiocontrols">
+        <audio id="myAudio" controls>
+            <source src="35.m4a" type="audio/mpeg">
+        </audio>
+        <input type="range" id="audiospeed" min=".25" max="4" value="1" step=".25" />
+        <datalist id="tickmarks">
+            <option value=".25" label="25%"></option>
+            <option value=".5"></option>
+            <option value="1"></option>
+            <option value="1.25"></option>
+            <option value="1.5"></option>
+            <option value="2" label="50%"></option>
+            <option value="2.5"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+        </datalist>
+    </div>
 
- 
-<div id="audiocontrols"> 
-<audio id="myAudio" controls>
-  <source  src="35.m4a" type="audio/mpeg">
-</audio>
-  <input type="range" id="audiospeed" min=".25" max="4" value="1" step=".25"/>
-  
-
-<datalist id="tickmarks">
-  <option value=".25" label="25%"></option>
-  <option value=".5"></option>
-  <option value="1"></option>
-  <option value="1.25"></option>
-  <option value="1.5"></option>
-  <option value="2" label="50%"></option>
-  <option value="2.5"></option>
-  <option value="3"></option>
-  <option value="4"></option>
-</datalist>
-</div>
-<input style='position:absolute;left:12px;top:205px;width:131px;height:23px' data-correct='' data-start='280.14' data-duration='3591'
-/>
-<input style='position:absolute;left:366px;top:201px;width:167px;height:24px' data-correct='' data-start='283.74' data-duration='5398'
-/>
-<input style='position:absolute;left:9px;top:237px;width:147px;height:20px' data-correct='' data-correct='' data-start='288.87' data-duration='3741'/>
-
-<input style='position:absolute;left:437px;top:258px;width:174px;height:23px' data-correct='' data-start='292.68' data-duration='9945'
-/>
-<input style='position:absolute;left:186px;top:293px;width:164px;height:16px' data-correct='' data-start='302.62' data-duration='2361'
-/>
-<input style='position:absolute;left:507px;top:291px;width:155px;height:19px' data-correct='' data-start='304.99' data-duration='3691'
-/>
-<input style='position:absolute;left:231px;top:322px;width:148px;height:19px' data-correct='' data-start='308.68' data-duration='6201'
-/>
-<input style='position:absolute;left:484px;top:320px;width:152px;height:17px' data-correct='' data-start='308.68' data-duration='6201'
-/>
-<input style='position:absolute;left:13px;top:352px;width:183px;height:16px' data-correct='' data-start='308.68' data-duration='6201'
-/>
-<input style='position:absolute;left:472px;top:349px;width:150px;height:17px' data-correct='' data-start='314.58' data-duration='5826'
-/>
-<input style='position:absolute;left:235px;top:376px;width:148px;height:17px' data-correct=''
- data-start='320.40' data-duration='5640'
-/>
-<input style='position:absolute;left:271px;top:407px;width:154px;height:17px' data-correct=''
- data-start='329.86' data-duration='5501'
-/>
-<input style='position:absolute;left:634px;top:404px;width:129px;height:17px' data-correct=''
-data-start='335.36' data-duration='4869'
-
-/>
-<input style='position:absolute;left:96px;top:431px;width:129px;height:21px' data-correct='' data-start='335.36' data-duration='4869'
-/>
-<input style='position:absolute;left:372px;top:432px;width:162px;height:18px' data-correct=''/>
-<input style='position:absolute;left:56px;top:461px;width:126px;height:22px' data-correct=''/>
-<input style='position:absolute;left:338px;top:462px;width:155px;height:16px' data-correct=''/>
-<input style='position:absolute;left:482px;top:489px;width:179px;height:17px' data-correct=''/>
-<input style='position:absolute;left:343px;top:516px;width:141px;height:18px' data-correct=''/>
-<input style='position:absolute;left:605px;top:515px;width:111px;height:20px' data-correct=''/>
-<input style='position:absolute;left:509px;top:542px;width:164px;height:19px' data-correct=''/>
-<input style='position:absolute;left:12px;top:579px;width:159px;height:15px' data-correct=''/>
-<input style='position:absolute;left:267px;top:572px;width:166px;height:18px' data-correct=''/>
-<input style='position:absolute;left:379px;top:602px;width:167px;height:18px' data-correct=''/>
-<input style='position:absolute;left:65px;top:632px;width:169px;height:18px' data-correct=''/>
-<input style='position:absolute;left:506px;top:629px;width:166px;height:20px' data-correct=''/>
-<input style='position:absolute;left:408px;top:659px;width:167px;height:16px' data-correct=''/>
-<input style='position:absolute;left:10px;top:688px;width:135px;height:18px' data-correct=''/>
-<input style='position:absolute;left:313px;top:685px;width:170px;height:21px' data-correct=''/>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script  src="./script.js"></script>
-<!-- Uncomment below for development -->
-<textarea id="area" style="position:fixed;top:10px; left:500px;"rows="6" cols="100">
+    <input style='position:absolute;left:12px;top:205px;width:131px;height:23px' data-correct='' data-start='280.14' data-duration='3591' />
+    <input style='position:absolute;left:366px;top:201px;width:167px;height:24px' data-correct='' data-start='283.74' data-duration='5398' />
+    <input style='position:absolute;left:9px;top:237px;width:147px;height:20px' data-correct='' data-correct='' data-start='288.87' data-duration='3741' />
+    <input style='position:absolute;left:437px;top:258px;width:174px;height:23px' data-correct='' data-start='292.68' data-duration='9945' />
+    <input style='position:absolute;left:186px;top:293px;width:164px;height:16px' data-correct='' data-start='302.62' data-duration='2361' />
+    <input style='position:absolute;left:507px;top:291px;width:155px;height:19px' data-correct='' data-start='304.99' data-duration='3691' />
+    <input style='position:absolute;left:231px;top:322px;width:148px;height:19px' data-correct='' data-start='308.68' data-duration='6201' />
+    <input style='position:absolute;left:484px;top:320px;width:152px;height:17px' data-correct='' data-start='308.68' data-duration='6201' />
+    <input style='position:absolute;left:13px;top:352px;width:183px;height:16px' data-correct='' data-start='308.68' data-duration='6201' />
+    <input style='position:absolute;left:472px;top:349px;width:150px;height:17px' data-correct='' data-start='314.58' data-duration='5826' />
+    <input style='position:absolute;left:235px;top:376px;width:148px;height:17px' data-correct='' data-start='320.40' data-duration='5640' />
+    <input style='position:absolute;left:271px;top:407px;width:154px;height:17px' data-correct='' data-start='329.86' data-duration='5501' />
+    <input style='position:absolute;left:634px;top:404px;width:129px;height:17px' data-correct='' data-start='335.36' data-duration='4869' />
+    <input style='position:absolute;left:96px;top:431px;width:129px;height:21px' data-correct='' data-start='335.36' data-duration='4869' />
+    <input style='position:absolute;left:372px;top:432px;width:162px;height:18px' data-correct='' data-start='340.17' data-duration='4066' />
+    <input style='position:absolute;left:56px;top:461px;width:126px;height:22px' data-correct='' data-start='344.00' data-duration='4918' />
+    <input style='position:absolute;left:338px;top:462px;width:155px;height:16px' data-correct='' data-start='348.92' data-duration='4256' />
+    <input style='position:absolute;left:482px;top:489px;width:179px;height:17px' data-correct='' data-start='353.17' data-duration='10286' />
+    <input style='position:absolute;left:343px;top:516px;width:141px;height:18px' data-correct='' data-start='363.46' data-duration='8448' />
+    <input style='position:absolute;left:605px;top:515px;width:111px;height:20px' data-correct='' data-start='371.98' data-duration='4075' />
+    <input style='position:absolute;left:509px;top:542px;width:164px;height:19px' data-correct='' data-start='376.06' data-duration='13088' />
+    <input style='position:absolute;left:12px;top:579px;width:159px;height:15px' data-correct='' data-start='376.06' data-duration='13088' />
+    <input style='position:absolute;left:267px;top:572px;width:166px;height:18px' data-correct='' data-start='376.06' data-duration='13088' />
+    <input style='position:absolute;left:379px;top:602px;width:167px;height:18px' data-correct='' data-start='388.90' data-duration='7627' />
+    <input style='position:absolute;left:65px;top:632px;width:169px;height:18px' data-correct='' data-start='396.53' data-duration='3135' />
+    <input style='position:absolute;left:506px;top:629px;width:166px;height:20px' data-correct='' data-start='399.66' data-duration='5697' />
+    <input style='position:absolute;left:408px;top:659px;width:167px;height:16px' data-correct='' data-start='405.36' data-duration='2218' />
+    <input style='position:absolute;left:10px;top:688px;width:135px;height:18px' data-correct='' data-start='407.64' data-duration='3823' />
+    <input style='position:absolute;left:313px;top:685px;width:170px;height:21px' data-correct='' data-start='411.47' data-duration='7277' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="./script.js"></script>
+    <!-- Uncomment below for development -->
+<!--     <textarea id="area" style="position:fixed;top:10px; left:500px;" rows="6" cols="100">
 </textarea>
-<script  src="./dev.js"></script>
-
+    <script src="./dev.js"></script> -->
 </body>
+
 </html>
