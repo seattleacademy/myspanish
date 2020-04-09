@@ -2,6 +2,8 @@ console.clear();
 
 $("input").change(onChange);
 
+
+
 function onChange(evt) {
     let correct = $(this).data("correct");
     let response = $(this).val();
