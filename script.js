@@ -29,6 +29,7 @@ $("input").keypress(function(event) {
         if (event.shiftKey) {
             $("input").each(function() {
                 correct = $(this).data('correct');
+                console.log(correct)
                 $(this).val(correct);
             })
         }
